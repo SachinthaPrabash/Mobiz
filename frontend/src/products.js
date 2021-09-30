@@ -91,7 +91,7 @@ const products = [
         brand: 'Samsung',
         category: 'mobilePhone',
         price: 45000,
-        countInStock: 4,
+        countInStock: 0,
         rating: 4.0,
         numReviews: 4,
     },
