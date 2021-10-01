@@ -1,6 +1,6 @@
 const products = [
     {
-        _id: '1',
+
         name: 'Iphone 7',
         image: '/images/iphn7.jpg',
         description: 'The iPhone 7 includes a 12-megapixel rear-facing camera with a quad-LED "True Tone" flash; its aperture was widened to f/1.8, and the standard-size phone model adds optical image stabilization – a feature that was previously exclusive to Plus models',
@@ -12,7 +12,7 @@ const products = [
         numReviews: 2,
     },
     {
-        _id: '2',
+
         name: 'Iphone 12',
         image: '/images/iphone12.png',
         description: 'The iPhone 7 includes a 12-megapixel rear-facing camera with a quad-LED "True Tone" flash; its aperture was widened to f/1.8, and the standard-size phone model adds optical image stabilization – a feature that was previously exclusive to Plus models',
@@ -24,7 +24,7 @@ const products = [
         numReviews: 6,
     },
     {
-        _id: '3',
+
         name: 'Iphone X',
         image: '/images/iphoneX.png',
         description: 'The iPhone 7 includes a 12-megapixel rear-facing camera with a quad-LED "True Tone" flash; its aperture was widened to f/1.8, and the standard-size phone model adds optical image stabilization – a feature that was previously exclusive to Plus models',
@@ -36,7 +36,7 @@ const products = [
         numReviews: 1,
     },
     {
-        _id: '4',
+
         name: 'LG G7',
         image: '/images/s20.png',
         description: 'The iPhone 7 includes a 12-megapixel rear-facing camera with a quad-LED "True Tone" flash; its aperture was widened to f/1.8, and the standard-size phone model adds optical image stabilization – a feature that was previously exclusive to Plus models',
@@ -48,7 +48,7 @@ const products = [
         numReviews: 1,
     },
     {
-        _id: '5',
+
         name: 'Nokia 7 Plus',
         image: '/images/nokia7Plus.png',
         description: 'The iPhone 7 includes a 12-megapixel rear-facing camera with a quad-LED "True Tone" flash; its aperture was widened to f/1.8, and the standard-size phone model adds optical image stabilization – a feature that was previously exclusive to Plus models',
@@ -60,7 +60,7 @@ const products = [
         numReviews: 3,
     },
     {
-        _id: '6',
+
         name: 'One Plus 9',
         image: '/images/onePlus9.png',
         description: 'The iPhone 7 includes a 12-megapixel rear-facing camera with a quad-LED "True Tone" flash; its aperture was widened to f/1.8, and the standard-size phone model adds optical image stabilization – a feature that was previously exclusive to Plus models',
@@ -72,7 +72,7 @@ const products = [
         numReviews: 3,
     },
     {
-        _id: '7',
+
         name: 'Samsung S-20',
         image: '/images/s20.png',
         description: 'The iPhone 7 includes a 12-megapixel rear-facing camera with a quad-LED "True Tone" flash; its aperture was widened to f/1.8, and the standard-size phone model adds optical image stabilization – a feature that was previously exclusive to Plus models',
@@ -84,7 +84,7 @@ const products = [
         numReviews: 2,
     },
     {
-        _id: '8',
+
         name: 'Samsung M-31',
         image: '/images/sM31.png',
         description: 'The iPhone 7 includes a 12-megapixel rear-facing camera with a quad-LED "True Tone" flash; its aperture was widened to f/1.8, and the standard-size phone model adds optical image stabilization – a feature that was previously exclusive to Plus models',
