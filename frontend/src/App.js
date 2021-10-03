@@ -10,7 +10,7 @@ import ProductScreen from "./screens/ProductScreen";
 const App = () => {
   return (
     <Router>
-      < >
+      <React.Fragment >
         <Header />
         <main className='py-4'>
           <Container>
@@ -19,7 +19,7 @@ const App = () => {
           </Container>
         </main>
         <Footer />
-      </>
+      </React.Fragment>
     </Router>
   );
 }
