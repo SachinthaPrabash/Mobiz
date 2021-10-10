@@ -29,9 +29,9 @@ const OrderScreen = ({ match }) => {
             (acc, item) => acc + item.price * item.qty, 0)
 
 
-        const addDecimals = (num) => {
-            return (Math.round(num * 100) / 100).toFixed(2)
-        }
+        // const addDecimals = (num) => {
+        //     return (Math.round(num * 100) / 100).toFixed(2)
+        // }
     }
 
 
