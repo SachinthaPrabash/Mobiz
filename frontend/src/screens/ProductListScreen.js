@@ -4,7 +4,7 @@ import { Table, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import { listProducts } from '../actions/productActions'
+import { listProducts, deleteProduct } from '../actions/productActions'
 
 const ProductListScreen = ({ history, match }) => {
 
@@ -12,6 +12,9 @@ const ProductListScreen = ({ history, match }) => {
 
     const productList = useSelector(state => state.productList)
     const { loading, error, products } = productList
+
+    const productDelete = useSelector((state) => state.productDelete)
+    const { loading: loadingDelete, error: errorDelete, success: successDelete } = productDelete
 
     const userLogin = useSelector(state => state.userLogin)
     const { userInfo } = userLogin
@@ -23,11 +26,12 @@ const ProductListScreen = ({ history, match }) => {
             history.push('/login')
         }
 
-    }, [dispatch, history, userInfo])
+    }, [dispatch, history, userInfo, successDelete])
 
     const deleteHandler = (id) => {
         if (window.confirm('Are you sure')) {
             //delete ptoduct
+            dispatch(deleteProduct(id))
         }
     }
 
@@ -41,12 +45,14 @@ const ProductListScreen = ({ history, match }) => {
                 <Col>
                     <h1>Products</h1>
                 </Col>
-                <Col className='text-right' md={4}>
-                    <Button onClick={createProductHandler}>
+                <Col className='text-right' >
+                    <Button className='md-3' onClick={createProductHandler}>
                         <i className='fas fa-plus'></i> Create Product
                     </Button>
                 </Col>
             </Row>
+            {loadingDelete && <Loader />}
+            {errorDelete && <Message variant='danger'>{errorDelete}</Message>}
 
             {loading ? <Loader /> : error ? <Message variant='danger'>{error}</Message> : (
                 <Table striped bordered hover responsive className='table-sm'>
@@ -65,9 +71,9 @@ const ProductListScreen = ({ history, match }) => {
                             <tr key={product._id}>
                                 <td>{product._id}</td>
                                 <td>{product.name}</td>
-                                <td>Rs{product.price}</td>
-                                <td>Rs{product.category}</td>
-                                <td>Rs{product.brand}</td>
+                                <td>Rs.{product.price}</td>
+                                <td>{product.category}</td>
+                                <td>{product.brand}</td>
 
 
                                 <td>
